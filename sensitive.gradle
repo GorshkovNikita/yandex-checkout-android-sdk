@@ -21,13 +21,14 @@
 
 ext {
 
-    merchantToken = "YOUR_CLIENT_APPLICATION_KEY"
+    merchantToken = "TODO: token"
 
-    shopId = "YOUR_SHOP_ID"
+    shopId = "522638"
 
-    gatewayId = "YOUR_GATEWAY_ID"
+    gatewayId = "522638"
 
-    yandexClientId = "YOUR_YANDEX_CLIENT_ID"
+    yandexClientId = "044c8492cf1a4084b537436d87bb6b4d"
+    metricaKey = "5e0a93f3-51e9-4730-881f-00d8fa6601d2"
 
     threatMetrixOrigId = 'fsymclue'
     threatMetrixFPServer = 's4.money.yandex.net'

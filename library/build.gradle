@@ -82,7 +82,8 @@ android {
 }
 
 repositories {
-    maven { url "http://artifactory.yandex.net/jcenter" }
+    mavenCentral()
+//    maven { url "http://artifactory.yandex.net/jcenter" }
 }
 
 dependencies {

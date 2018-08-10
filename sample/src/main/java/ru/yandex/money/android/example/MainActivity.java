@@ -45,6 +45,7 @@ import ru.yandex.money.android.sdk.PaymentMethodType;
 import ru.yandex.money.android.sdk.ShopParameters;
 
 import java.math.BigDecimal;
+import java.util.Collections;
 import java.util.Currency;
 import java.util.HashSet;
 import java.util.Set;
@@ -88,14 +89,14 @@ public final class MainActivity extends AppCompatActivity {
                     this,
                     new Amount(amount, RUB),
                     new ShopParameters(
-                            getString(R.string.main_product_name),
-                            getString(R.string.main_product_description),
+                            "FitSide",
+                            "",
                             BuildConfig.MERCHANT_TOKEN,
-                            paymentMethodTypes,
-                            paymentMethodTypes.isEmpty() || settings.isGooglePayAllowed(),
+                            Collections.emptySet(),
+                            false,
                             BuildConfig.SHOP_ID,
                             BuildConfig.GATEWAY_ID,
-                            settings.showYandexCheckoutLogo()
+                            true
                     )
             );
         }
